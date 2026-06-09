@@ -1,0 +1,10 @@
+*
+!.gitignore
+!assets/
+assets/*
+!assets/defaults/
+!assets/defaults/**
+!assets/teches/
+!assets/teches/**
+!assets/logo/
+!assets/logo/**
