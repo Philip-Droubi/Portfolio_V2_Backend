@@ -2,7 +2,9 @@
 
 namespace App\Services;
 
+use App\Http\Resources\ProjectResource;
 use App\Http\Resources\TechResource;
+use App\Models\Project\Project;
 use App\Models\Project\Tech;
 
 /**
@@ -13,8 +15,10 @@ class PortfolioService
     public function portfolio(): array
     {
         return [
-            'projects' => [],
-            'teches' => TechResource::collection(Tech::all(['id', 'name', 'icon'])),
+            'projects'  => ProjectResource::collection(Project::where('is_draft', false)
+                ->with(['teches', 'tags', 'media'])
+                ->get()),
+            'teches'    => TechResource::collection(Tech::all(['id', 'name', 'icon'])),
         ];
     }
 }
