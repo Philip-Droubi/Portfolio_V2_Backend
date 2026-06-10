@@ -10,7 +10,7 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Support\Facades\Storage;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class TechesTable extends BaseResource
 {
@@ -38,8 +38,8 @@ class TechesTable extends BaseResource
                 EditAction::make(),
                 DeleteAction::make()->requiresConfirmation()
                     ->before(function ($record) {
-                        if ($record->icon) {
-                            Storage::disk('public')->delete($record->icon);
+                        if ($record->icon_public_id) {
+                            Cloudinary::uploadApi()->destroy($record->icon_public_id);
                         }
                     })
             ])
@@ -49,8 +49,8 @@ class TechesTable extends BaseResource
                         ->requiresConfirmation()
                         ->before(function ($records) {
                             foreach ($records as $record) {
-                                if ($record->icon) {
-                                    Storage::disk('public')->delete($record->icon);
+                                if ($record->icon_public_id) {
+                                    Cloudinary::uploadApi()->destroy($record->icon_public_id);
                                 }
                             }
                         })

@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Project\Teches\Schemas;
 
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\View;
 use Filament\Schemas\Schema;
 
 class TechForm
@@ -20,6 +21,14 @@ class TechForm
                     ->columnSpanFull()
                     ->label(__("keys.name"))
                     ->translateLabel(),
+
+                View::make('filament.forms.image-viewer')
+                    ->viewData(fn($record) => [
+                        'url' => $record?->icon,
+                        'label' => __("keys.icon")
+                    ])
+                    ->columnSpanFull(),
+
                 FileUpload::make('icon')
                     ->maxSize(1024)
                     ->directory('assets/teches')

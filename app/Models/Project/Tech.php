@@ -12,6 +12,7 @@ class Tech extends Model
     use HasFactory, HasTranslations;
     protected $fillable = [
         'icon',
+        'icon_public_id',
         'name',
     ];
 

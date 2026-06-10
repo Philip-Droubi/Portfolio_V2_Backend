@@ -129,37 +129,6 @@ class ProjectForm
                                     })
                                     ->toArray();
                             })
-                            ->createOptionForm([
-                                TextInput::make('name.ar')
-                                    ->minLength(1)
-                                    ->maxLength(255)
-                                    ->required()
-                                    ->label(__("keys.name_ar"))
-                                    ->translateLabel(),
-
-                                TextInput::make('name.en')
-                                    ->required()
-                                    ->minLength(1)
-                                    ->maxLength(255)
-                                    ->label(__("keys.name_en"))
-                                    ->translateLabel(),
-
-                                FileUpload::make('icon')
-                                    ->maxSize(1024)
-                                    ->directory('assets/teches')
-                                    ->acceptedFileTypes([
-                                        'image/svg+xml',
-                                        'image/png',
-                                        'image/jpeg',
-                                        'image/jpg',
-                                    ])
-                                    ->moveFiles()
-                                    ->preserveFilenames()
-                                    ->imageEditorEmptyFillColor('#333')
-                                    ->columnSpanFull()
-                                    ->label(__('keys.icon'))
-                                    ->translateLabel()
-                            ])
                             ->label(__("keys.teches"))
                             ->translateLabel(),
 

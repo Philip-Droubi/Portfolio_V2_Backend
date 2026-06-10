@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('teches', function (Blueprint $table) {
             $table->id();
-            $table->string('icon');
+            $table->string('icon')->nullable();
+            $table->string('icon_public_id')->nullable();
             $table->json('name');
             $table->timestamps();
         });
