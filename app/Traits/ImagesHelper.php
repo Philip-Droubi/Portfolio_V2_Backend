@@ -38,7 +38,10 @@ trait ImagesHelper
     protected function getFullImageUrl($url)
     {
         if ($url)
-            return config('app.url') . "/storage/{$url}";
+            return str_starts_with($url, "http") ?
+                $url
+                :
+                config('app.url') . "/storage/{$url}";
         return "";
     }
 }
