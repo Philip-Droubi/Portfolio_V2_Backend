@@ -6,6 +6,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\View;
 use Filament\Schemas\Schema;
+use Filament\Forms\Components\Toggle;
 
 class TechForm
 {
@@ -20,6 +21,10 @@ class TechForm
                     ->maxLength(255)
                     ->columnSpanFull()
                     ->label(__("keys.name"))
+                    ->translateLabel(),
+
+                Toggle::make('is_active')
+                    ->label(__("keys.is_active"))
                     ->translateLabel(),
 
                 View::make('filament.forms.image-viewer')

@@ -14,6 +14,7 @@ class Tech extends Model
         'icon',
         'icon_public_id',
         'name',
+        'is_active',
     ];
 
     public $translatable = ['name'];

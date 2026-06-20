@@ -10,6 +10,7 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\IconColumn;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class TechesTable extends BaseResource
@@ -28,6 +29,10 @@ class TechesTable extends BaseResource
                     ->translateLabel(),
                 ImageColumn::make('icon')
                     ->label(__('keys.icon')),
+                IconColumn::make('is_active')
+                    ->boolean()
+                    ->label('keys.is_active')
+                    ->translateLabel(),
                 self::getDateTableComponent(),
                 self::getDateTableComponent('updated_at', 'updated_at'),
             ])

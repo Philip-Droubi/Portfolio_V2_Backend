@@ -18,7 +18,7 @@ class PortfolioService
             'projects'  => ProjectResource::collection(Project::where('is_draft', false)
                 ->with(['teches', 'tags', 'media'])
                 ->get()),
-            'teches'    => TechResource::collection(Tech::all(['id', 'name', 'icon'])),
+            'teches'    => TechResource::collection(Tech::where('is_active', true)->get(['id', 'name', 'icon'])),
         ];
     }
 }
