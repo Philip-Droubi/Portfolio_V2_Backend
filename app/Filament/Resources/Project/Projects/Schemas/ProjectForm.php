@@ -254,6 +254,7 @@ class ProjectForm
                 'rich' => RichEditor::make($fieldName)
                     ->label("{$label} ({$langLabel})")
                     ->required()
+                    ->extraInputAttributes(['data-tiptap-allow-html' => true])
                     ->columnSpanFull(),
 
                 'textarea' => Textarea::make($fieldName)
@@ -266,7 +267,7 @@ class ProjectForm
                     ->label("{$label} ({$langLabel})")
                     ->required()
                     ->columnSpanFull()
-                    ->reactive()
+                    ->live(onBlur: true)
                     ->afterStateUpdated(function ($state, callable $set) use ($baseKey, $langKey) {
                         if ($baseKey === 'name' && $langKey === 'en') {
                             $set('slug', Str::slug($state));

@@ -14,11 +14,14 @@ class TechesTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('teches')->delete();
+        
 
-        \DB::table('teches')->insert(array(
-            15 =>
-            array(
+        \DB::table('teches')->delete();
+        
+        \DB::table('teches')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781725972/portfolio/v2/teches/ari32s0fgm5jgbsovpnw.svg',
                 'icon_public_id' => 'portfolio/v2/teches/ari32s0fgm5jgbsovpnw',
                 'name' => '{"ar":"PHP","en":"PHP"}',
@@ -26,8 +29,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-17 22:52:52',
                 'updated_at' => '2026-06-17 22:52:55',
             ),
-            0 =>
-            array(
+            1 => 
+            array (
+                'id' => 2,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126319/portfolio/v2/teches/yz3uuyf4ve5khzopnhxi.svg',
                 'icon_public_id' => 'portfolio/v2/teches/yz3uuyf4ve5khzopnhxi',
                 'name' => '{"ar":"Laravel","en":"Laravel"}',
@@ -35,8 +39,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:37:30',
                 'updated_at' => '2026-06-11 00:18:41',
             ),
-            16 =>
-            array(
+            2 => 
+            array (
+                'id' => 3,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781726037/portfolio/v2/teches/acwvnqrgo0nqbes0b03i.svg',
                 'icon_public_id' => 'portfolio/v2/teches/acwvnqrgo0nqbes0b03i',
                 'name' => '{"ar":"MySQL","en":"MySQL"}',
@@ -44,8 +49,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-17 22:53:56',
                 'updated_at' => '2026-06-17 22:53:59',
             ),
-            7 =>
-            array(
+            3 => 
+            array (
+                'id' => 4,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126055/portfolio/v2/teches/tktehpkjt9a0bojexkuo.svg',
                 'icon_public_id' => 'portfolio/v2/teches/tktehpkjt9a0bojexkuo',
                 'name' => '{"ar":"Filament","en":"Filament"}',
@@ -53,8 +59,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 02:14:26',
                 'updated_at' => '2026-06-11 00:14:16',
             ),
-            1 =>
-            array(
+            4 => 
+            array (
+                'id' => 5,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126294/portfolio/v2/teches/g0o7ycoypjdudyoj4lou.svg',
                 'icon_public_id' => 'portfolio/v2/teches/g0o7ycoypjdudyoj4lou',
                 'name' => '{"ar":"React JS","en":"React JS"}',
@@ -62,8 +69,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:45:43',
                 'updated_at' => '2026-06-11 00:18:15',
             ),
-            2 =>
-            array(
+            5 => 
+            array (
+                'id' => 6,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126257/portfolio/v2/teches/fmpxdgjclsadfmjmwoim.svg',
                 'icon_public_id' => 'portfolio/v2/teches/fmpxdgjclsadfmjmwoim',
                 'name' => '{"ar":"Zustand","en":"Zustand"}',
@@ -71,8 +79,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:46:12',
                 'updated_at' => '2026-06-11 00:17:39',
             ),
-            3 =>
-            array(
+            6 => 
+            array (
+                'id' => 7,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126225/portfolio/v2/teches/zscznjqflrp21ekoch4e.svg',
                 'icon_public_id' => 'portfolio/v2/teches/zscznjqflrp21ekoch4e',
                 'name' => '{"ar":"React Query","en":"React Query"}',
@@ -80,8 +89,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:46:42',
                 'updated_at' => '2026-06-11 00:17:07',
             ),
-            4 =>
-            array(
+            7 => 
+            array (
+                'id' => 8,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126190/portfolio/v2/teches/ecvhfhze7lxlgsoaeisv.svg',
                 'icon_public_id' => 'portfolio/v2/teches/ecvhfhze7lxlgsoaeisv',
                 'name' => '{"ar":"React Router","en":"React Router"}',
@@ -89,8 +99,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:47:08',
                 'updated_at' => '2026-06-11 00:16:32',
             ),
-            5 =>
-            array(
+            8 => 
+            array (
+                'id' => 9,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126467/portfolio/v2/teches/z8ucvgypm5zwwnd5hib3.svg',
                 'icon_public_id' => 'portfolio/v2/teches/z8ucvgypm5zwwnd5hib3',
                 'name' => '{"ar":"Material UI","en":"Material UI"}',
@@ -98,8 +109,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:47:28',
                 'updated_at' => '2026-06-11 00:21:08',
             ),
-            6 =>
-            array(
+            9 => 
+            array (
+                'id' => 10,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126130/portfolio/v2/teches/ppy6xofy98ynp9bqab8n.svg',
                 'icon_public_id' => 'portfolio/v2/teches/ppy6xofy98ynp9bqab8n',
                 'name' => '{"ar":"Axios","en":"Axios"}',
@@ -107,8 +119,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 01:47:46',
                 'updated_at' => '2026-06-11 00:15:32',
             ),
-            8 =>
-            array(
+            10 => 
+            array (
+                'id' => 11,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126022/portfolio/v2/teches/rkgnze6zpmio4aygw5k3.svg',
                 'icon_public_id' => 'portfolio/v2/teches/rkgnze6zpmio4aygw5k3',
                 'name' => '{"ar":"HTML","en":"HTML"}',
@@ -116,8 +129,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 23:51:02',
                 'updated_at' => '2026-06-11 00:13:43',
             ),
-            9 =>
-            array(
+            11 => 
+            array (
+                'id' => 12,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781125995/portfolio/v2/teches/qo6vdbizpqf5smfwhp3w.svg',
                 'icon_public_id' => 'portfolio/v2/teches/qo6vdbizpqf5smfwhp3w',
                 'name' => '{"ar":"CSS","en":"CSS"}',
@@ -125,8 +139,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 23:51:23',
                 'updated_at' => '2026-06-11 00:13:16',
             ),
-            10 =>
-            array(
+            12 => 
+            array (
+                'id' => 13,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781125967/portfolio/v2/teches/marklkliiihrmyj5qtsn.svg',
                 'icon_public_id' => 'portfolio/v2/teches/marklkliiihrmyj5qtsn',
                 'name' => '{"ar":"JavaScript","en":"JavaScript"}',
@@ -134,8 +149,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 23:51:59',
                 'updated_at' => '2026-06-11 00:12:48',
             ),
-            12 =>
-            array(
+            13 => 
+            array (
+                'id' => 14,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781125850/portfolio/v2/teches/j0925zixhzjpmktuqgmi.svg',
                 'icon_public_id' => 'portfolio/v2/teches/j0925zixhzjpmktuqgmi',
                 'name' => '{"ar":"TypeScript","en":"TypeScript"}',
@@ -143,8 +159,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-10 00:13:19',
                 'updated_at' => '2026-06-11 00:10:52',
             ),
-            11 =>
-            array(
+            14 => 
+            array (
+                'id' => 15,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781126436/portfolio/v2/teches/fwolgcvci88mhzr84mtf.svg',
                 'icon_public_id' => 'portfolio/v2/teches/fwolgcvci88mhzr84mtf',
                 'name' => '{"ar":"Tailwind CSS","en":"Tailwind CSS"}',
@@ -152,8 +169,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-08 23:52:29',
                 'updated_at' => '2026-06-11 00:20:37',
             ),
-            13 =>
-            array(
+            15 => 
+            array (
+                'id' => 16,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781725859/portfolio/v2/teches/kc8ajos1jcxmq99sui48.svg',
                 'icon_public_id' => 'portfolio/v2/teches/kc8ajos1jcxmq99sui48',
                 'name' => '{"ar":"Git","en":"Git"}',
@@ -161,8 +179,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-17 22:50:48',
                 'updated_at' => '2026-06-17 22:51:02',
             ),
-            14 =>
-            array(
+            16 => 
+            array (
+                'id' => 17,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781725926/portfolio/v2/teches/mewsrtxkhfzuoovezwlv.svg',
                 'icon_public_id' => 'portfolio/v2/teches/mewsrtxkhfzuoovezwlv',
                 'name' => '{"ar":"Postman","en":"Postman"}',
@@ -170,8 +189,9 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-17 22:52:05',
                 'updated_at' => '2026-06-17 22:52:09',
             ),
-            17 =>
-            array(
+            17 => 
+            array (
+                'id' => 18,
                 'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1781726092/portfolio/v2/teches/xnzxgdmncpk5l9suvbsx.svg',
                 'icon_public_id' => 'portfolio/v2/teches/xnzxgdmncpk5l9suvbsx',
                 'name' => '{"ar":"JIRA","en":"JIRA"}',
@@ -179,6 +199,28 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-17 22:54:51',
                 'updated_at' => '2026-06-17 22:54:55',
             ),
+            18 => 
+            array (
+                'id' => 19,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782176583/portfolio/v2/teches/irr1717wofpkzfzh9pzi.svg',
+                'icon_public_id' => 'portfolio/v2/teches/irr1717wofpkzfzh9pzi',
+                'name' => '{"ar":"C++","en":"C++"}',
+                'is_active' => 0,
+                'created_at' => '2026-06-23 04:03:04',
+                'updated_at' => '2026-06-23 04:03:06',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782176614/portfolio/v2/teches/vimbltr3u7j3elvythrg.svg',
+                'icon_public_id' => 'portfolio/v2/teches/vimbltr3u7j3elvythrg',
+                'name' => '{"ar":"OpenGL","en":"OpenGL"}',
+                'is_active' => 0,
+                'created_at' => '2026-06-23 04:03:36',
+                'updated_at' => '2026-06-23 04:03:38',
+            ),
         ));
+        
+        
     }
 }
