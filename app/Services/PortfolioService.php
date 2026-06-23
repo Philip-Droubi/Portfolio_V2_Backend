@@ -3,8 +3,10 @@
 namespace App\Services;
 
 use App\Http\Resources\ProjectResource;
+use App\Http\Resources\TagResource;
 use App\Http\Resources\TechResource;
 use App\Models\Project\Project;
+use App\Models\Project\Tag;
 use App\Models\Project\Tech;
 
 /**
@@ -19,6 +21,7 @@ class PortfolioService
                 ->with(['teches', 'tags', 'media'])
                 ->get()),
             'teches'    => TechResource::collection(Tech::where('is_active', true)->get(['id', 'name', 'icon'])),
+            'tags'      => TagResource::collection(Tag::all()),
         ];
     }
 }
