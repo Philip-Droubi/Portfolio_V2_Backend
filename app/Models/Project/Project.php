@@ -20,9 +20,10 @@ class Project extends Model
         'main_image_public_id',
         'start_date',
         'end_date',
-        'is_draft',
         'url',
-        'live_url'
+        'live_url',
+        'is_draft',
+        'is_company',
     ];
 
     public $translatable = ['name', 'tiny_description', 'description'];

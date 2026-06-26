@@ -20,6 +20,7 @@ class ProjectResource extends JsonResource
             'end_date'      => $this->end_date,
             'url'           => $this->url,
             'live_url'      => $this->live_url,
+            'is_company'    => (bool) $this->is_company,
 
             'teches'        => TechResource::collection($this->teches),
             'tags'          => TagResource::collection($this->tags),

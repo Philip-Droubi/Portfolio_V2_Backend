@@ -100,4 +100,7 @@ return [
     'url'                           => 'رابط',
     'live_url'                      => 'رابط مباشر',
     'draft'                         => 'مسودة',
+    'is_company'                    => 'شركة',
+    'company'                       => 'شركة',
+    'not_company'                   => 'ليس شركة',
 ];

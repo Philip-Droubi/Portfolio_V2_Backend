@@ -17,9 +17,12 @@ class PortfolioService
     public function portfolio(): array
     {
         return [
-            'projects'  => ProjectResource::collection(Project::where('is_draft', false)
-                ->with(['teches', 'tags', 'media'])
-                ->get()),
+            'projects'  => ProjectResource::collection(
+                Project::where('is_draft', false)
+                    ->with(['teches', 'tags', 'media'])
+                    ->orderBy('start_date', 'desc')
+                    ->get()
+            ),
             'teches'    => TechResource::collection(Tech::where('is_active', true)->get(['id', 'name', 'icon'])),
             'tags'      => TagResource::collection(Tag::all()),
         ];

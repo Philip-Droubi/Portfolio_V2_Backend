@@ -21,9 +21,10 @@ return new class extends Migration
             $table->string('main_image_public_id')->nullable();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
-            $table->boolean('is_draft');
             $table->string('url')->nullable();
             $table->string('live_url')->nullable();
+            $table->boolean('is_draft');
+            $table->boolean('is_company')->default(false);
             $table->timestamps();
         });
     }

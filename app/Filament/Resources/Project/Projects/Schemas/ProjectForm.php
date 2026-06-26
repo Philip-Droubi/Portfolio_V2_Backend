@@ -179,9 +179,21 @@ class ProjectForm
                         //Draft
                         Fieldset::make(__('keys.is_draft'))
                             ->schema(
-                                [Toggle::make('is_draft')
-                                    ->label(__("keys.is_draft"))
-                                    ->translateLabel()]
+                                [
+                                    Toggle::make('is_draft')
+                                        ->label(__("keys.is_draft"))
+                                        ->translateLabel()
+                                ]
+                            ),
+
+                        //Company
+                        Fieldset::make(__('keys.is_company'))
+                            ->schema(
+                                [
+                                    Toggle::make('is_company')
+                                        ->label(__("keys.is_company"))
+                                        ->translateLabel()
+                                ]
                             ),
                     ])
                     ->collapsible()

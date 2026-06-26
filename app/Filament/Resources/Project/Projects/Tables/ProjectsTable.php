@@ -52,6 +52,10 @@ class ProjectsTable extends BaseResource
                     ->boolean()
                     ->label('keys.is_draft')
                     ->translateLabel(),
+                IconColumn::make('is_company')
+                    ->boolean()
+                    ->label('keys.is_company')
+                    ->translateLabel(),
                 TagsColumn::make('tags.name')
                     ->label(__('keys.tags'))
                     ->translateLabel()
@@ -71,6 +75,13 @@ class ProjectsTable extends BaseResource
                     ->options([
                         1 => __('keys.draft'),
                         0 => __('keys.active'),
+                    ])
+                    ->placeholder(__('keys.all')),
+                SelectFilter::make('is_company')
+                    ->label(__('keys.is_company'))
+                    ->options([
+                        1 => __('keys.company'),
+                        0 => __('keys.not_company'),
                     ])
                     ->placeholder(__('keys.all')),
 

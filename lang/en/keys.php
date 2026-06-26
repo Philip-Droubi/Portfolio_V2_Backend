@@ -100,4 +100,7 @@ return [
     'url'                           => 'URL',
     'live_url'                      => 'Live URL',
     'draft'                         => 'Draft',
+    'is_company'                    => 'Company',
+    'company'                       => 'Company',
+    'not_company'                   => 'Not Company',
 ];
