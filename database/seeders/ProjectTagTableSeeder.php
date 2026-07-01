@@ -91,6 +91,38 @@ class ProjectTagTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            9 => 
+            array (
+                'id' => 11,
+                'project_id' => 9,
+                'tag_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            10 => 
+            array (
+                'id' => 12,
+                'project_id' => 10,
+                'tag_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            11 => 
+            array (
+                'id' => 13,
+                'project_id' => 11,
+                'tag_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            12 => 
+            array (
+                'id' => 14,
+                'project_id' => 11,
+                'tag_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         

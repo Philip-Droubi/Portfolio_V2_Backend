@@ -262,6 +262,96 @@ class ProjectMediaTableSeeder extends Seeder
                 'created_at' => '2026-06-25 22:33:08',
                 'updated_at' => '2026-06-25 22:33:08',
             ),
+            27 => 
+            array (
+                'id' => 46,
+                'project_id' => 9,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782790288/portfolio/v2/projects/9/media/rnovtcxmcaautktflqxr.jpg',
+                'public_id' => 'portfolio/v2/projects/9/media/rnovtcxmcaautktflqxr',
+                'created_at' => '2026-06-30 06:31:29',
+                'updated_at' => '2026-06-30 06:31:29',
+            ),
+            28 => 
+            array (
+                'id' => 47,
+                'project_id' => 9,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782790292/portfolio/v2/projects/9/media/fl4ua815zsufrenlxknt.jpg',
+                'public_id' => 'portfolio/v2/projects/9/media/fl4ua815zsufrenlxknt',
+                'created_at' => '2026-06-30 06:31:33',
+                'updated_at' => '2026-06-30 06:31:33',
+            ),
+            29 => 
+            array (
+                'id' => 48,
+                'project_id' => 9,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782790295/portfolio/v2/projects/9/media/n4fvskxg2stpiztkiu5i.jpg',
+                'public_id' => 'portfolio/v2/projects/9/media/n4fvskxg2stpiztkiu5i',
+                'created_at' => '2026-06-30 06:31:37',
+                'updated_at' => '2026-06-30 06:31:37',
+            ),
+            30 => 
+            array (
+                'id' => 50,
+                'project_id' => 10,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782850804/portfolio/v2/projects/10/media/nsvyhqtgf3o6ttk9kdjz.png',
+                'public_id' => 'portfolio/v2/projects/10/media/nsvyhqtgf3o6ttk9kdjz',
+                'created_at' => '2026-06-30 23:20:06',
+                'updated_at' => '2026-06-30 23:20:06',
+            ),
+            31 => 
+            array (
+                'id' => 51,
+                'project_id' => 10,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782851421/portfolio/v2/projects/10/media/i1hyivwez9ftvwpyn6yl.jpg',
+                'public_id' => 'portfolio/v2/projects/10/media/i1hyivwez9ftvwpyn6yl',
+                'created_at' => '2026-06-30 23:30:23',
+                'updated_at' => '2026-06-30 23:30:23',
+            ),
+            32 => 
+            array (
+                'id' => 52,
+                'project_id' => 11,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782934557/portfolio/v2/projects/11/media/pjkfgjfd4ypy7mkowvg1.png',
+                'public_id' => 'portfolio/v2/projects/11/media/pjkfgjfd4ypy7mkowvg1',
+                'created_at' => '2026-07-01 22:35:59',
+                'updated_at' => '2026-07-01 22:35:59',
+            ),
+            33 => 
+            array (
+                'id' => 53,
+                'project_id' => 11,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782934563/portfolio/v2/projects/11/media/nbdfegj4gk12qubpzywk.png',
+                'public_id' => 'portfolio/v2/projects/11/media/nbdfegj4gk12qubpzywk',
+                'created_at' => '2026-07-01 22:36:04',
+                'updated_at' => '2026-07-01 22:36:04',
+            ),
+            34 => 
+            array (
+                'id' => 54,
+                'project_id' => 11,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782934612/portfolio/v2/projects/11/media/qxxiwlyebasznkxdupzc.png',
+                'public_id' => 'portfolio/v2/projects/11/media/qxxiwlyebasznkxdupzc',
+                'created_at' => '2026-07-01 22:36:54',
+                'updated_at' => '2026-07-01 22:36:54',
+            ),
+            35 => 
+            array (
+                'id' => 55,
+                'project_id' => 11,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782934629/portfolio/v2/projects/11/media/nxn7rx3k7v55uri2wh0m.png',
+                'public_id' => 'portfolio/v2/projects/11/media/nxn7rx3k7v55uri2wh0m',
+                'created_at' => '2026-07-01 22:37:13',
+                'updated_at' => '2026-07-01 22:37:13',
+            ),
+            36 => 
+            array (
+                'id' => 56,
+                'project_id' => 11,
+                'url' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782934649/portfolio/v2/projects/11/media/sqakbw0lkijw1bmyqeok.png',
+                'public_id' => 'portfolio/v2/projects/11/media/sqakbw0lkijw1bmyqeok',
+                'created_at' => '2026-07-01 22:37:32',
+                'updated_at' => '2026-07-01 22:37:32',
+            ),
         ));
         
         

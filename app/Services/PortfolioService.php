@@ -19,7 +19,11 @@ class PortfolioService
         return [
             'projects'  => ProjectResource::collection(
                 Project::where('is_draft', false)
-                    ->with(['teches', 'tags', 'media'])
+                    ->with([
+                        'teches' => fn($q) => $q->orderBy('project_tech.id'),
+                        'tags',
+                        'media'
+                    ])
                     ->orderBy('start_date', 'desc')
                     ->get()
             ),

@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProjectsTableSeeder::class);
         $this->call(ProjectMediaTableSeeder::class);
         $this->call(ProjectTagTableSeeder::class);
+        $this->call(ProjectTechTableSeeder::class);
     }
 }
