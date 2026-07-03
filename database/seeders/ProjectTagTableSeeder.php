@@ -123,6 +123,30 @@ class ProjectTagTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            13 => 
+            array (
+                'id' => 15,
+                'project_id' => 12,
+                'tag_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            14 => 
+            array (
+                'id' => 16,
+                'project_id' => 13,
+                'tag_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            15 => 
+            array (
+                'id' => 17,
+                'project_id' => 13,
+                'tag_id' => 3,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         

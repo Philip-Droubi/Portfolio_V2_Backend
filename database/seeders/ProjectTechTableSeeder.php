@@ -363,6 +363,102 @@ class ProjectTechTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            43 => 
+            array (
+                'id' => 47,
+                'project_id' => 12,
+                'tech_id' => 5,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            44 => 
+            array (
+                'id' => 48,
+                'project_id' => 12,
+                'tech_id' => 14,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            45 => 
+            array (
+                'id' => 49,
+                'project_id' => 12,
+                'tech_id' => 15,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            46 => 
+            array (
+                'id' => 50,
+                'project_id' => 12,
+                'tech_id' => 10,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            47 => 
+            array (
+                'id' => 51,
+                'project_id' => 12,
+                'tech_id' => 9,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            48 => 
+            array (
+                'id' => 52,
+                'project_id' => 12,
+                'tech_id' => 7,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            49 => 
+            array (
+                'id' => 53,
+                'project_id' => 12,
+                'tech_id' => 8,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            50 => 
+            array (
+                'id' => 54,
+                'project_id' => 12,
+                'tech_id' => 6,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            51 => 
+            array (
+                'id' => 55,
+                'project_id' => 13,
+                'tech_id' => 11,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            52 => 
+            array (
+                'id' => 56,
+                'project_id' => 13,
+                'tech_id' => 12,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            53 => 
+            array (
+                'id' => 57,
+                'project_id' => 13,
+                'tech_id' => 13,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            54 => 
+            array (
+                'id' => 58,
+                'project_id' => 13,
+                'tech_id' => 22,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         
