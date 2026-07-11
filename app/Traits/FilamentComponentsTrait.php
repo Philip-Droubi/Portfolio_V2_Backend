@@ -2,12 +2,11 @@
 
 namespace App\Traits;
 
-use App\Models\Product\Color;
-use App\Models\Product\ProductTag;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\ColorPicker;
-use Filament\Forms\Components\Select;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Str;
 
 trait FilamentComponentsTrait
 {
@@ -19,5 +18,42 @@ trait FilamentComponentsTrait
             ->dateTime($dateTime)
             ->sortable($sortable)
             ->toggleable(isToggledHiddenByDefault: $isToggledHiddenByDefault);
+    }
+
+    public static function translatableTextInputs(
+        string $baseKey,
+        string $label,
+        string $type = 'text'
+    ): array {
+        $languages = config('_custom.accepted_languages_key_value');
+
+        return collect($languages)->map(function ($langLabel, $langKey) use ($baseKey, $label, $type) {
+            $fieldName = "{$baseKey}.{$langKey}";
+
+            return match ($type) {
+                'rich' => RichEditor::make($fieldName)
+                    ->label("{$label} ({$langLabel})")
+                    ->required()
+                    ->extraInputAttributes(['data-tiptap-allow-html' => true])
+                    ->columnSpanFull(),
+
+                'textarea' => Textarea::make($fieldName)
+                    ->label("{$label} ({$langLabel})")
+                    ->rows(4)
+                    ->required()
+                    ->columnSpanFull(),
+
+                default => TextInput::make($fieldName)
+                    ->label("{$label} ({$langLabel})")
+                    ->required()
+                    ->columnSpanFull()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function ($state, callable $set) use ($baseKey, $langKey) {
+                        if ($baseKey === 'name' && $langKey === 'en') {
+                            $set('slug', Str::slug($state));
+                        }
+                    }),
+            };
+        })->toArray();
     }
 }

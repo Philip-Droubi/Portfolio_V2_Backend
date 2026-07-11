@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProjectMediaTableSeeder::class);
         $this->call(ProjectTagTableSeeder::class);
         $this->call(ProjectTechTableSeeder::class);
+        $this->call(CertificatesTableSeeder::class);
     }
 }

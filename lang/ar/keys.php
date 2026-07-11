@@ -1,5 +1,7 @@
 <?php
 
+use App\Enums\CertificateSourceEnum;
+
 return [
 
     /*
@@ -16,6 +18,8 @@ return [
     //Public
     'items'                         => 'عناصر',
     'user_personal_info'            => 'معلومات المستخدم الشخصية',
+    'info'                          => 'معلومات',
+    'file'                          => 'الملف',
 
     //Fields
     'user_name'                     => 'اسم المستخدم',
@@ -103,4 +107,15 @@ return [
     'is_company'                    => 'شركة',
     'company'                       => 'شركة',
     'not_company'                   => 'ليس شركة',
+
+    //Certificates
+    'certificates'                  => 'الشهادات',
+    'certificate'                   => 'شهادة',
+    'source'                        => 'المصدر',
+    'issue_date'                    => 'تاريخ الصدور',
+
+    CertificateSourceEnum::GOOGLE->value    => 'Google',
+    CertificateSourceEnum::UDACITY->value   => 'Udacity',
+    CertificateSourceEnum::ACADEMIC->value  => 'Academic & Volunteer',
+    CertificateSourceEnum::COURSERA->value  => 'Coursera',
 ];

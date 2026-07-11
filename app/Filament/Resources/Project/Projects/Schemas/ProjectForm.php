@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Project\Projects\Schemas;
 
 use App\Models\Project\Tag;
 use App\Models\Project\Tech;
+use App\Traits\FilamentComponentsTrait;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
@@ -21,6 +22,7 @@ use Illuminate\Support\Str;
 
 class ProjectForm
 {
+    use FilamentComponentsTrait;
     public static function configure(Schema $schema): Schema
     {
         return $schema
@@ -54,7 +56,6 @@ class ProjectForm
                                 self::translatableTextInputs(
                                     'tiny_description',
                                     __('keys.tiny_description'),
-                                    true
                                 )
                             ),
 
@@ -250,42 +251,5 @@ class ProjectForm
                     ])
                     ->columnSpanFull(),
             ]);
-    }
-
-    private static function translatableTextInputs(
-        string $baseKey,
-        string $label,
-        string $type = 'text'
-    ): array {
-        $languages = config('_custom.accepted_languages_key_value');
-
-        return collect($languages)->map(function ($langLabel, $langKey) use ($baseKey, $label, $type) {
-            $fieldName = "{$baseKey}.{$langKey}";
-
-            return match ($type) {
-                'rich' => RichEditor::make($fieldName)
-                    ->label("{$label} ({$langLabel})")
-                    ->required()
-                    ->extraInputAttributes(['data-tiptap-allow-html' => true])
-                    ->columnSpanFull(),
-
-                'textarea' => Textarea::make($fieldName)
-                    ->label("{$label} ({$langLabel})")
-                    ->rows(4)
-                    ->required()
-                    ->columnSpanFull(),
-
-                default => TextInput::make($fieldName)
-                    ->label("{$label} ({$langLabel})")
-                    ->required()
-                    ->columnSpanFull()
-                    ->live(onBlur: true)
-                    ->afterStateUpdated(function ($state, callable $set) use ($baseKey, $langKey) {
-                        if ($baseKey === 'name' && $langKey === 'en') {
-                            $set('slug', Str::slug($state));
-                        }
-                    }),
-            };
-        })->toArray();
     }
 }

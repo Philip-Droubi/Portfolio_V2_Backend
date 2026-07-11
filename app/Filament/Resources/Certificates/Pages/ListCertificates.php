@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Filament\Resources\Project\Projects\Pages;
+namespace App\Filament\Resources\Certificates\Pages;
 
-use App\Filament\Resources\Project\Projects\ProjectResource;
+use App\Filament\Resources\Certificates\CertificateResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
 use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 
-class ListProjects extends ListRecords
+class ListCertificates extends ListRecords
 {
     use Translatable;
-    protected static string $resource = ProjectResource::class;
+    protected static string $resource = CertificateResource::class;
 
     protected function getHeaderActions(): array
     {
