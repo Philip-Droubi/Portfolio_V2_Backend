@@ -13,6 +13,7 @@ class CertificateResource extends JsonResource
     {
         $data = [
             'id'                => $this->id,
+            'source'            => __("keys.{$this->source}"),
             'file_url'          => $this->getFullImageUrl($this->file_url),
             'issue_date'        => $this->issue_date,
         ];
