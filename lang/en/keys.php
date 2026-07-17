@@ -90,7 +90,7 @@ return [
 
     //Projects
     'project'                       => 'Project',
-    'teches'                        => 'Teches',
+    'techs'                         => 'Techs',
     'tech'                          => 'Tech',
     'tiny_description'              => 'Tiny Description',
     'general_info'                  => 'General Info',

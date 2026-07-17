@@ -33,7 +33,7 @@ class Project extends Model
         return $this->belongsToMany(Tag::class, 'project_tag');
     }
 
-    public function teches(): BelongsToMany
+    public function techs(): BelongsToMany
     {
         return $this->belongsToMany(Tech::class, 'project_tech');
     }

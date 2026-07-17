@@ -21,7 +21,7 @@ class TechResource extends Resource
 
     protected static ?int $navigationSort = 2;
 
-    protected static ?string $slug = 'teches';
+    protected static ?string $slug = 'techs';
 
     protected static ?string $model = Tech::class;
 
@@ -54,7 +54,7 @@ class TechResource extends Resource
 
     public static function getNavigationLabel(): string
     {
-        return ucwords(__('keys.teches'));
+        return ucwords(__('keys.techs'));
     }
 
     public static function getModelLabel(): string
@@ -64,7 +64,7 @@ class TechResource extends Resource
 
     public static function getPluralModelLabel(): string
     {
-        return __('keys.teches');
+        return __('keys.techs');
     }
 
     public static function getNavigationGroup(): string

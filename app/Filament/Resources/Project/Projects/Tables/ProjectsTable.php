@@ -61,8 +61,8 @@ class ProjectsTable extends BaseResource
                     ->translateLabel()
                     ->badge()
                     ->color('primary'),
-                TagsColumn::make('teches.name')
-                    ->label(__('keys.teches'))
+                TagsColumn::make('techs.name')
+                    ->label(__('keys.techs'))
                     ->translateLabel()
                     ->badge()
                     ->color('primary'),
@@ -93,10 +93,10 @@ class ProjectsTable extends BaseResource
                     ->preload()
                     ->searchable(),
 
-                //Teches Filters
-                SelectFilter::make('teches')
-                    ->label(__('keys.teches'))
-                    ->relationship('teches', 'name')
+                //Techs Filters
+                SelectFilter::make('techs')
+                    ->label(__('keys.techs'))
+                    ->relationship('techs', 'name')
                     ->multiple()
                     ->preload()
                     ->searchable(),

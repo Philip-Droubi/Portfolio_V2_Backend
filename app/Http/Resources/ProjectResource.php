@@ -22,7 +22,7 @@ class ProjectResource extends JsonResource
             'live_url'      => $this->live_url,
             'is_company'    => (bool) $this->is_company,
 
-            'teches'        => TechResource::collection($this->teches),
+            'techs'         => TechResource::collection($this->techs),
             'tags'          => TagResource::collection($this->tags),
             'media'         => $this->getMedia(),
         ];

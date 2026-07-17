@@ -111,10 +111,10 @@ class ProjectForm
                             ->label(__("keys.live_url"))
                             ->translateLabel(),
 
-                        //Teches
-                        Select::make('teches')
+                        //Techs
+                        Select::make('techs')
                             ->preload()
-                            ->relationship('teches', 'name')
+                            ->relationship('techs', 'name')
                             ->multiple()
                             ->searchable()
                             ->getSearchResultsUsing(function (string $search) {
@@ -130,7 +130,7 @@ class ProjectForm
                                     })
                                     ->toArray();
                             })
-                            ->label(__("keys.teches"))
+                            ->label(__("keys.techs"))
                             ->translateLabel(),
 
                         //Tags

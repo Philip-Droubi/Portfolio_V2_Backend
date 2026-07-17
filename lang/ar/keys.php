@@ -90,7 +90,7 @@ return [
 
     //Projects
     'project'                       => 'مشروع',
-    'teches'                        => 'التقنيات',
+    'techs'                         => 'التقنيات',
     'tech'                          => 'تقنية',
     'tiny_description'              => 'وصف قصير',
     'general_info'                  => 'معلومات عامة',

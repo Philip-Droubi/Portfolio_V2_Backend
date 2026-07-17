@@ -3,9 +3,7 @@
 namespace App\Filament\Resources\Project\Teches\Pages;
 
 use App\Filament\Resources\Project\Teches\TechResource;
-use App\Models\Project\Tech;
 use Filament\Resources\Pages\CreateRecord;
-use Illuminate\Support\Facades\DB;
 use LaraZeus\SpatieTranslatable\Resources\Pages\CreateRecord\Concerns\Translatable;
 use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;

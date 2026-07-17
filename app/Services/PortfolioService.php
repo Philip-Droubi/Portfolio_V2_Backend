@@ -22,14 +22,14 @@ class PortfolioService
             'projects'      => ProjectResource::collection(
                 Project::where('is_draft', false)
                     ->with([
-                        'teches' => fn($q) => $q->orderBy('project_tech.id'),
+                        'techs' => fn($q) => $q->orderBy('project_tech.id'),
                         'tags',
                         'media'
                     ])
                     ->orderBy('start_date', 'desc')
                     ->get()
             ),
-            'teches'        => TechResource::collection(Tech::where('is_active', true)->get(['id', 'name', 'icon'])),
+            'techs'         => TechResource::collection(Tech::where('is_active', true)->get(['id', 'name', 'icon'])),
             'tags'          => TagResource::collection(Tag::all()),
             'certificate'   => CertificateResource::collection(Certificate::all()),
         ];
