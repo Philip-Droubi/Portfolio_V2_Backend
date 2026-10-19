@@ -219,6 +219,66 @@ class TechesTableSeeder extends Seeder
                 'created_at' => '2026-06-23 04:03:36',
                 'updated_at' => '2026-06-23 04:03:38',
             ),
+            20 => 
+            array (
+                'id' => 21,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1782442945/portfolio/v2/teches/iiecxgtonoyacelswsok.svg',
+                'icon_public_id' => 'portfolio/v2/teches/iiecxgtonoyacelswsok',
+                'name' => '{"ar":"Team Leadership","en":"Team Leadership"}',
+                'is_active' => 0,
+                'created_at' => '2026-06-26 06:02:18',
+                'updated_at' => '2026-06-26 06:02:29',
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1783027089/portfolio/v2/teches/xxzjcqewrpxw7zq4i4uo.svg',
+                'icon_public_id' => 'portfolio/v2/teches/xxzjcqewrpxw7zq4i4uo',
+                'name' => '{"ar":"PWA","en":"PWA"}',
+                'is_active' => 0,
+                'created_at' => '2026-07-03 00:05:23',
+                'updated_at' => '2026-07-03 00:18:12',
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1791509294/portfolio/v2/teches/xirqeoymqpoqkchwnfjw.svg',
+                'icon_public_id' => 'portfolio/v2/teches/xirqeoymqpoqkchwnfjw',
+                'name' => '{"ar":"Claude","en":"Claude"}',
+                'is_active' => 1,
+                'created_at' => '2026-10-09 04:25:09',
+                'updated_at' => '2026-10-09 04:28:17',
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1791509572/portfolio/v2/teches/ydp6vf1jydzugqmuszva.svg',
+                'icon_public_id' => 'portfolio/v2/teches/ydp6vf1jydzugqmuszva',
+                'name' => '{"ar":"Next.js","en":"Next.js"}',
+                'is_active' => 0,
+                'created_at' => '2026-10-09 04:32:51',
+                'updated_at' => '2026-10-09 04:32:53',
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1791509668/portfolio/v2/teches/nuy5il2bmuslgdqz6nlt.svg',
+                'icon_public_id' => 'portfolio/v2/teches/nuy5il2bmuslgdqz6nlt',
+                'name' => '{"ar":"Nest.js","en":"Nest.js"}',
+                'is_active' => 0,
+                'created_at' => '2026-10-09 04:34:27',
+                'updated_at' => '2026-10-09 04:34:29',
+            ),
+            25 => 
+            array (
+                'id' => 26,
+                'icon' => 'https://res.cloudinary.com/djjulka78/image/upload/v1792413127/portfolio/v2/teches/lnz08oqqpg51atfwaazu.png',
+                'icon_public_id' => 'portfolio/v2/teches/lnz08oqqpg51atfwaazu',
+                'name' => '{"ar":"C#","en":"C#"}',
+                'is_active' => 0,
+                'created_at' => '2026-10-19 15:32:06',
+                'updated_at' => '2026-10-19 15:32:08',
+            ),
         ));
         
         

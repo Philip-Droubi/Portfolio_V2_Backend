@@ -459,6 +459,62 @@ class ProjectTechTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            55 => 
+            array (
+                'id' => 59,
+                'project_id' => 14,
+                'tech_id' => 5,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            56 => 
+            array (
+                'id' => 60,
+                'project_id' => 14,
+                'tech_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            57 => 
+            array (
+                'id' => 61,
+                'project_id' => 14,
+                'tech_id' => 24,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            58 => 
+            array (
+                'id' => 62,
+                'project_id' => 14,
+                'tech_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            59 => 
+            array (
+                'id' => 63,
+                'project_id' => 14,
+                'tech_id' => 25,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            60 => 
+            array (
+                'id' => 64,
+                'project_id' => 15,
+                'tech_id' => 26,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            61 => 
+            array (
+                'id' => 65,
+                'project_id' => 15,
+                'tech_id' => 23,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         
