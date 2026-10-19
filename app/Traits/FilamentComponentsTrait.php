@@ -2,8 +2,8 @@
 
 namespace App\Traits;
 
+use App\Filament\Forms\Components\PortfolioRichEditor;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Str;
@@ -31,10 +31,10 @@ trait FilamentComponentsTrait
             $fieldName = "{$baseKey}.{$langKey}";
 
             return match ($type) {
-                'rich' => RichEditor::make($fieldName)
+                'rich' => PortfolioRichEditor::make($fieldName)
                     ->label("{$label} ({$langLabel})")
                     ->required()
-                    ->extraInputAttributes(['data-tiptap-allow-html' => true])
+                    ->contentDirection(in_array($langKey, ['ar'], true) ? 'rtl' : 'ltr')
                     ->columnSpanFull(),
 
                 'textarea' => Textarea::make($fieldName)
